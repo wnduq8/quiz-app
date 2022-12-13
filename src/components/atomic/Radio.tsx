@@ -13,7 +13,7 @@ function Radio(props: IRadioProps) {
   return (
     <>
       <input type="radio" id={id} value={value} checked={checked} onChange={onChange} />
-      <label htmlFor={id} dangerouslySetInnerHTML={{ __html: label }} />
+      <label htmlFor={id}>{label}</label>
     </>
   )
 }

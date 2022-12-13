@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { PATH } from '@lib/constants'
 import styled from 'styled-components'
 import Question from '@components/Question'
+import { IUserAnswerList } from '@hooks/types'
 
 function QuizResultIncorrect() {
   const {
@@ -20,15 +21,11 @@ function QuizResultIncorrect() {
     <QuizResultIncorrectBlock>
       <p>오답 노트</p>
       <ul>
-        {incorrectList.map((list: any) => (
+        {incorrectList.map((list: IUserAnswerList) => (
           <li key={list.question}>
-            <Question question={list.question} question_list={list.question_list} userAnswer={list.userAnswer} />
-            <p>
-              정답 : <span dangerouslySetInnerHTML={{ __html: list.correct_answer }} />
-            </p>
-            <p>
-              선택하신 답 : <span dangerouslySetInnerHTML={{ __html: list.user_answer }} />
-            </p>
+            <Question question={list.question} question_list={list.question_list} userAnswer={list.user_answer} />
+            <p>정답 : {list.correct_answer}</p>
+            <p>선택하신 답 : {list.user_answer}</p>
           </li>
         ))}
       </ul>

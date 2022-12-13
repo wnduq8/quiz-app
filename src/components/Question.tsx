@@ -11,7 +11,7 @@ interface IQuestionProps {
 function Question({ question, question_list, userAnswer, onChange }: IQuestionProps) {
   return (
     <QuestionBlock>
-      <p dangerouslySetInnerHTML={{ __html: question }} />
+      <p>{question}</p>
       <ul>
         {question_list.map((question: string, index: number) => (
           <li key={question}>

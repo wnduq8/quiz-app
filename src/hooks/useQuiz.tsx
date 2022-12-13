@@ -2,11 +2,7 @@ import { useMemo, useState } from 'react'
 import Cookies from 'js-cookie'
 import { PATH, END_TIMESTAMP_COOKIE_NAME, USER_ANSWER_COOKIE_NAME } from '@lib/constants'
 import { useNavigate } from 'react-router-dom'
-
-interface IUseQuizProps {
-  quiz: any
-  userAnswerList: any
-}
+import { IUseQuizProps } from '@hooks/types'
 
 function useQuiz({ quiz, userAnswerList }: IUseQuizProps) {
   const [userAnswer, setUserAnswer] = useState('')

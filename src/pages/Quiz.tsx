@@ -11,6 +11,7 @@ function Quiz() {
   const {
     state: { quiz },
   } = useLocation()
+
   const navigate = useNavigate()
   const userAnswerList = Cookies.get(USER_ANSWER_COOKIE_NAME) ? JSON.parse(Cookies.get(USER_ANSWER_COOKIE_NAME)!) : null
   const { userAnswer, isCorrect, isFinish, currentQuiz, order, onChangeQuestion, onClickNext, onClickFinish } = useQuiz(
@@ -19,6 +20,9 @@ function Quiz() {
       userAnswerList,
     },
   )
+
+  console.log(quiz)
+  console.log(userAnswerList)
 
   useEffect(() => {
     if (!userAnswerList) {
