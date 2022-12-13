@@ -21,9 +21,6 @@ function Quiz() {
     },
   )
 
-  console.log(quiz)
-  console.log(userAnswerList)
-
   useEffect(() => {
     if (!userAnswerList) {
       navigate(PATH.HOME, { replace: true })
