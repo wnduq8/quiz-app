@@ -15,7 +15,6 @@ function useQuiz({ quiz, userAnswerList }: IUseQuizProps) {
   const onChangeQuestion = (answer: string) => {
     setUserAnswer(answer)
   }
-
   const userAnswerObj = useMemo(
     () => ({
       question: currentQuiz.question,
@@ -39,7 +38,7 @@ function useQuiz({ quiz, userAnswerList }: IUseQuizProps) {
     navigate(PATH.RESULT)
   }
 
-  return { userAnswer, onClickFinish, onChangeQuestion, onClickNext, isCorrect, isFinish, currentQuiz, order }
+  return { userAnswer, isCorrect, isFinish, currentQuiz, order, onClickFinish, onChangeQuestion, onClickNext }
 }
 
 export default useQuiz

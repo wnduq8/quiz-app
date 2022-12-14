@@ -23,7 +23,7 @@ function QuizResultIncorrect() {
       <ul>
         {incorrectList.map((list: IUserAnswerList) => (
           <li key={list.question}>
-            <Question question={list.question} question_list={list.question_list} userAnswer={list.user_answer} />
+            <Question question={list.question} questionList={list.question_list} userAnswer={list.user_answer} />
             <p>정답 : {list.correct_answer}</p>
             <p>선택하신 답 : {list.user_answer}</p>
           </li>

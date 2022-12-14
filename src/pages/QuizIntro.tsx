@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
 import { useQuery } from '@tanstack/react-query'
-import shuffle from '@lib/shuffle'
+import { shuffle } from '@lib/shuffle'
 import Button from '@components/atomic/Button'
 import Cookies from 'js-cookie'
 import { PATH, START_TIMESTAMP_COOKIE_NAME, USER_ANSWER_COOKIE_NAME } from '@lib/constants'

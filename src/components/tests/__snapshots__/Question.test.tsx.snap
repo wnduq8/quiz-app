@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question Snapshot - 항목을 선택하지 않았을 때 1`] = `
+<section
+  className="sc-bcXHqe LzPpX"
+>
+  <p>
+    Which game did NOT get financed via Crowdfunding?
+  </p>
+  <ul>
+    <li>
+      <input
+        checked={false}
+        id="Town of Salem-1"
+        onChange={[Function]}
+        type="radio"
+        value="Town of Salem"
+      />
+      <label
+        htmlFor="Town of Salem-1"
+      >
+        Town of Salem
+      </label>
+    </li>
+    <li>
+      <input
+        checked={false}
+        id="Undertale-2"
+        onChange={[Function]}
+        type="radio"
+        value="Undertale"
+      />
+      <label
+        htmlFor="Undertale-2"
+      >
+        Undertale
+      </label>
+    </li>
+    <li>
+      <input
+        checked={false}
+        id="Tower Unite-3"
+        onChange={[Function]}
+        type="radio"
+        value="Tower Unite"
+      />
+      <label
+        htmlFor="Tower Unite-3"
+      >
+        Tower Unite
+      </label>
+    </li>
+    <li>
+      <input
+        checked={false}
+        id="Enter the Gungeon-4"
+        onChange={[Function]}
+        type="radio"
+        value="Enter the Gungeon"
+      />
+      <label
+        htmlFor="Enter the Gungeon-4"
+      >
+        Enter the Gungeon
+      </label>
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`Question Snapshot - 항목을 선택했을 때 1`] = `
+<section
+  className="sc-bcXHqe LzPpX"
+>
+  <p>
+    Which game did NOT get financed via Crowdfunding?
+  </p>
+  <ul>
+    <li>
+      <input
+        checked={false}
+        id="Town of Salem-1"
+        onChange={[Function]}
+        type="radio"
+        value="Town of Salem"
+      />
+      <label
+        htmlFor="Town of Salem-1"
+      >
+        Town of Salem
+      </label>
+    </li>
+    <li>
+      <input
+        checked={false}
+        id="Undertale-2"
+        onChange={[Function]}
+        type="radio"
+        value="Undertale"
+      />
+      <label
+        htmlFor="Undertale-2"
+      >
+        Undertale
+      </label>
+    </li>
+    <li>
+      <input
+        checked={false}
+        id="Tower Unite-3"
+        onChange={[Function]}
+        type="radio"
+        value="Tower Unite"
+      />
+      <label
+        htmlFor="Tower Unite-3"
+      >
+        Tower Unite
+      </label>
+    </li>
+    <li>
+      <input
+        checked={true}
+        id="Enter the Gungeon-4"
+        onChange={[Function]}
+        type="radio"
+        value="Enter the Gungeon"
+      />
+      <label
+        htmlFor="Enter the Gungeon-4"
+      >
+        Enter the Gungeon
+      </label>
+    </li>
+  </ul>
+</section>
+`;

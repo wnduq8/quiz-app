@@ -33,7 +33,7 @@ function Quiz() {
       <Question
         onChange={onChangeQuestion}
         question={currentQuiz.question}
-        question_list={currentQuiz.question_list}
+        questionList={currentQuiz.question_list}
         userAnswer={userAnswer}
       />
       {userAnswer && (

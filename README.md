@@ -1,46 +1,16 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Stack
+- react
+- styled-component
+- react-query
 
-## Available Scripts
+## Test
+크게 비즈니스 로직을 수행하는 custom hook, 화면을 보여주는 component, util성 함수 3가지 단위의 테스트 코드를 작성하려 했습니다.<br />
+테스트 코드를 처음 작성하다 보니 component 단위의 테스트 코드를 작성하지 못했습니다. 앞으로 스터디를 통해 어느 정도까지의 테스트 코드를 작성하는 것이 
+좋을지 많이 알아보고 적용해 나가야겠습니다.
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 느낀점
+이번 퀴즈 앱을 만들면서 처음 React에서 테스트 코드를 작성하는 법에 대해서 많이 알아볼 수 있는 좋은 시간이었다.
+테스트 코드의 대해 여러 장점이 있지만 내가 생각하는 가장 큰 장점으로는 코드 간의 의존성을 분리함으로써 역할과 책임을 분명히 나누며 그로 인해 코드가 깔끔해졌다는 것을 느꼈다.
+아직은 많이 부족하지만, 충분히 공부해보고 적용해나갈 만한 가치가 있다고 생각합니다.

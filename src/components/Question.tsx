@@ -3,17 +3,17 @@ import styled from 'styled-components'
 
 interface IQuestionProps {
   question: string
-  question_list: string[]
+  questionList: string[]
   userAnswer: string
   onChange?: (value: string) => void
 }
 
-function Question({ question, question_list, userAnswer, onChange }: IQuestionProps) {
+function Question({ question, questionList, userAnswer, onChange }: IQuestionProps) {
   return (
     <QuestionBlock>
       <p>{question}</p>
       <ul>
-        {question_list.map((question: string, index: number) => (
+        {questionList.map((question: string, index: number) => (
           <li key={question}>
             <Radio
               value={question}
